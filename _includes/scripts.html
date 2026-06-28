@@ -1,5 +1,51 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+// Clipboard copy for Cite / BibTeX buttons
+function copyText(btn) {
+  var source = btn.parentElement.querySelector('.copy-source');
+  if (!source) return;
+  var text = source.textContent;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(text, btn);
+    });
+  } else {
+    fallbackCopy(text, btn);
+  }
+}
+
+function fallbackCopy(text, btn) {
+  var textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+  document.body.appendChild(textarea);
+  textarea.select();
+  try {
+    document.execCommand('copy');
+    showCopied(btn);
+  } catch(e) {
+    btn.textContent = 'Failed';
+    setTimeout(function() { btn.textContent = btn.getAttribute('data-original'); }, 1500);
+  }
+  document.body.removeChild(textarea);
+}
+
+function showCopied(btn) {
+  var original = btn.getAttribute('data-original') || btn.textContent;
+  btn.setAttribute('data-original', original);
+  btn.textContent = 'Copied!';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = original;
+    btn.classList.remove('copied');
+  }, 1500);
+}
+</script>
+
 {% include analytics.html %}
 
 {% include comments-providers/scripts.html %}

@@ -66,32 +66,39 @@
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Learn more, forget less: A gradient-Aware data selection approach for LLM",
+      "publisher": "Signal Processing",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "A gradient-aware data selection approach for large language models."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "DocOS: A Benchmark for Proactive Document-Guided Actions in GUI Agents",
+      "publisher": "Forty-third International Conference on Machine Learning (ICML)",
+      "releaseDate": "2026-07-01",
+      "website": "",
+      "summary": "A benchmark for evaluating proactive document-guided actions in GUI agents. (CCF A, 共一第一)"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Towards Multi-Language Repository-Level Code Generation: From-Scratch to Guided Tasks",
+      "publisher": "Neurocomputing",
+      "releaseDate": "2026-06-01",
+      "website": "",
+      "summary": "Multi-language repository-level code generation spanning from-scratch to guided tasks. (JCR Q1, 共一第一)"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "RepoDebug: Repository-Level Multi-Task and Multi-Language Debugging Evaluation of Large Language Models",
+      "publisher": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+      "releaseDate": "2025-12-01",
+      "website": "",
+      "summary": "A benchmark for evaluating LLMs on repository-level debugging across multiple tasks and languages. (第一作者)"
+    },
+    {
+      "name": "中文多技能对话评估",
+      "publisher": "智能系统学报 (CAAI Transactions on Intelligent Systems)",
+      "releaseDate": "2024-06-01",
+      "website": "",
+      "summary": "中文多技能对话评估方法研究。"
     }
   ],
   "presentations": [
